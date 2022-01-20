@@ -103,4 +103,32 @@ most of the time they are used in if else statements and other conditional state
  
      
 
- 
+ *****************  DAY 3 ***************************
+
+ ## Switch statement:
+   - here we can use this in place of elseif() ladder 
+   - this has 2 parts cases and default where default can get executed regardless of condition
+
+## Statement and Expressions:
+   - can say that statements are sentence and expression as words as words give meaning to sentence the other way
+   - statemnent cant return expression 
+   - expression can return expression\
+   **note**:in template literals only expression can be added but not the statemnt as they dont return value
+## History of javaScript:
+   - 1995 js was created with a sole pupose to make the webpages dynamic and was named as **Mocha**
+   - 1996 name was changed to **live Script** and then to **java script**
+   - 1997 js was standerdized for first time by ECMA and **ES1**
+   was released
+
+
+## ECMA versions:
+   - 2009 after 1997 first update was released i,e **ES5** was released
+   - 2015 **ES6/ES2015** was released form here the anual update relase cylcle was implemented
+
+     - js is backward compatible language not forward compatible therefore while developing its better to use latest version of chrome but during production to make it compatible with older browser code can be converted to **ES5** using polyfill or transfile
+     - js follows don't break web rule.
+
+## Strict mode:
+   - activation strict mode helps us to reduce the errors which would not be detected by the js compiler and this results in efficient coding
+   - strict mode shoud be activated before a coding  
+

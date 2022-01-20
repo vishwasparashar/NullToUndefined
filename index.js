@@ -98,3 +98,37 @@ if(abc==25){
     console.log(false)
 }                          //here op is false
 
+//***************************Day 3******************************* */
+'use  strict';                                                //activates strict mode 
+
+// switch statement 
+
+let marks=90;
+switch (true) {
+    case(marks>80) :
+          console.log("A")
+          break;
+    case(marks>50&&marks<80):
+            console.log('B')
+           break;
+     default:
+         console.log('fail');
+};
+
+//ternary operator this can be used inside template literals
+let cost=200;
+let tip=cost>50 &&cost<300?15/100*cost:20/100*cost;
+ console.log(tip);
+
+//experimented
+ let cost =1000;
+if(50<cost<300){            //this results in true because value of true will be one
+
+    console.log('15%');
+
+}else{
+console.log('20%')
+}
+ 
+
+
