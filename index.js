@@ -98,7 +98,7 @@ if(abc==25){
     console.log(false)
 }                          //here op is false
 
-//***************************Day 3******************************* */
+//***************************Day 3********************************/
 'use  strict';                                                //activates strict mode 
 
 // switch statement 
@@ -129,6 +129,27 @@ if(50<cost<300){            //this results in true because value of true will be
 }else{
 console.log('20%')
 }
- 
 
+
+//***************************Day 4********************************/
+// functions:
+
+function cook(item1,item2){                   //using function declaration
+    let cooked=`${item1},${item2} is ready`;
+    return(cooked);                           //return keyword returning value 
+
+};
+
+const waiteress=function(order_1,order_2){    //using function expression
+    let deliver= `${order_1} and ${order_2} is ready`;
+    console.log(deliver);
+
+};
+customers();                                  //invoking function
+const  customers=()=>{                        //using arrow function
+     let order_1=prompt("enter your starter");
+     let order_2=prompt("enter your your main course");
+     waiteress(order_1,order_2);
+ };
+s
 
