@@ -141,7 +141,7 @@ function cook(item1,item2){                   //using function declaration
 };
 
 const waiteress=function(order_1,order_2){    //using function expression
-    let deliver= `${order_1} and ${order_2} is ready`;
+    let deliver= cook()
     console.log(deliver);
 
 };
@@ -151,5 +151,27 @@ const  customers=()=>{                        //using arrow function
      let order_2=prompt("enter your your main course");
      waiteress(order_1,order_2);
  };
-s
 
+//***************************Day 5********************************/
+//Arrays
+
+ const arr=[2,3,8,9];                     //declaring array using square bracket
+ const arr_1=new Array('a','b','c','d');  //declaring array using new key word
+
+
+ //adding and deleting elements from arrays 
+ arr.push('vishwas');                     //adds element to last position on array // this shows that const can make only primary data types immutable
+ console.log(arr);        
+ arr.unshift('parashar');                 //adds element to the first positon on array
+ console.log(arr);
+ arr.pop();                               //removes the last element from array
+ console.log(arr);
+ arr.shift();                             // removes the first element from array
+ console.log(arr);
+ //other basic finction on arrays
+ const index=arr.indexOf(9);              //shows the index of the given element
+ console.log(index);
+ const notFound=arr.indexOf(100);         // if a particular element dosen't exist in the given array we get -1 as op
+ console.log(notFound);
+ const check=arr_1.includes('vishwas');              // this returns true or false based on presence of element in the array
+ console.log(check);
