@@ -175,3 +175,37 @@ const  customers=()=>{                        //using arrow function
  console.log(notFound);
  const check=arr_1.includes('vishwas');              // this returns true or false based on presence of element in the array
  console.log(check);
+
+ //***************************Day 6********************************/
+
+ //objects:
+
+ 
+const avengers={
+    hulk:"mark Ruffolo",
+    ironMan:"robert downey",
+    thor:"chris hemsworth",
+    captainAmerica:"chris evens",
+    blackWidow:"scarlett johansson",
+    villain:"loki",
+    mission:function(){                                     //object method inside which to spedcify the properties using  this keyword
+        let orders=`${this.hulk}smash ${this.villain},${this.ironMan},${this.thor} clear flying targets,${this.captainAmerica} and ${this.blackWidow} clear ground and recuse`;
+        return orders;
+    },
+};
+console.log(avengers.mission());                            //retriving data from using . operator
+console.log(avengers['thor']);                              //retriving datat from using [] square brackets
+
+// loops
+
+const excercise=['squats','pushups'];
+for(let i=0;i<excercise.length;i++){                         //looping array using for loop
+
+    // if(i===1) continue;                                      // skiping the iteration when i=1 to skip pushups and cheat
+   
+    for(j=1;j<=5;j++){
+        if(j===5) break;                                      // using brak and reducing  the number of repetation of excercise
+        
+        console.log(`${excercise[i]} number ${j} `);
+    };
+};

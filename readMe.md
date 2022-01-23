@@ -154,3 +154,25 @@ most of the time they are used in if else statements and other conditional state
 ## Array functions:
   - used to work on arrays such as performing adding element to array or deleting element or finding lenght ETC.
 
+
+
+*****************  DAY 6 ***************************
+## objects:
+ - They are heterogenous datastructure dosen't have index for the elements 
+ - The data is stored in form of key value pairs
+ - to acess a dota from object we need to use keys
+## Retriving data from objects:
+ - objects can be retrived using 2 methods:
+   - using . dot operator, we need to use  exact name of the key directly
+   - using [] square bracket,we need to use string of the particular key which gives flexibility
+## Methods inside objects:
+- methods can be created inside objects and can be acessed like a property of an object.
+- to used the properties that are already present in the object we can use **this** operator, this key word refers to property of the parent object to which it belongs
+
+## Basic loops :
+  - for loop : in for loop we need to specify three parameters that are initiating counter,condition and counter increment  or decrement
+  - while loop:in while loop we only can specify the condition but not the counter its basically needed when number of loops needed is unknown.
+## continue and break:
+  - *continue* it is used to skip  the particular iteration from execution
+  - *break* it is used to stop execution inside loop and come outside loop
+
