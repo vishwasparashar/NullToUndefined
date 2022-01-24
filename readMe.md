@@ -5,7 +5,7 @@
 =>Number \
 =>String \
 =>Boolean\
-=>undefined: its a flsey value\
+=>undefined: its a falsey value\
 =>Null :its a falsey value\
 =>symbol\
 =>BigInt
