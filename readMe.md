@@ -176,3 +176,26 @@ most of the time they are used in if else statements and other conditional state
   - *continue* it is used to skip  the particular iteration from execution
   - *break* it is used to stop execution inside loop and come outside loop
 
+*****************  DAY 7***************************
+# Dom manipulations
+
+## Dom (document object model):
+ - documentation of of HTML documents
+ - used to acess every element of HTML and manipulate them
+ - it follows tree structure
+ - Dom is not a part of js it's a web api which acts like library
+
+## Dom selection and manipulation:
+- There are diffrent ways to select the particular element they are: 
+    - getElementById -herethe id of the element is reffered
+    - getElementByclassName- here the class of element is reffered
+    - getElementByTagName- here the name of tag is reffered if there exist many same tags then the first tag is reffered
+    - querySelector- here we can use anything to select an element
+    - querySelectorAll- here multiple elements can be selcted togeather they are put to geather in form of arrays
+- We can manipulate HTML and and css using js :
+    - .textContent is used to acess the text inside a particular elements
+    - .value is used to acess to text inside a particalur input fields like textbok and 
+    - .setAttribute is used to change the attributes of the particular element tag
+
+## Mouse events(addEventListner()):
+   

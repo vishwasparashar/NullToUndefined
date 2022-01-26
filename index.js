@@ -209,3 +209,30 @@ for(let i=0;i<excercise.length;i++){                         //looping array usi
         console.log(`${excercise[i]} number ${j} `);
     };
 };
+
+
+//***************************Day 6********************************/
+// dom manipulatons
+// selection types:
+
+document.getElementById('id')                     // acessing elemnts using id
+document.getElementsByClassName('class_name')     // acessing by class name
+document.getElementsByTagName(span)               //using tag name
+document.getElementsByName('name')
+document.querySelector('#id');
+document.querySelector('.class_name');
+document.querySelector('.span');                  // can be acessed using either of them
+document.querySelectorAll('h1');                  // will select all the h1 tags and stored it inside array
+
+// few event listner and manipulation
+document.querySelector('.btn').addEventListener('click',function(){
+    //this id immediately invoked function that runs as soon as click event on btn occurs
+});
+document.querySelector('.class_name').setAttribute('attribute','new_value');
+document.querySelector('.class_name').textContent='new content'
+document.querySelector('.class_name').value='new value'
+
+div.classList;                                // returns all the class associtated to div
+div.classList.remove("class");
+div.classList.add('new_class');
+div.classList.toggle("class_name",condition)   //toggles the class if the conditon is true
