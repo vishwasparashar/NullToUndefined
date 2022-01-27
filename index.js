@@ -211,7 +211,7 @@ for(let i=0;i<excercise.length;i++){                         //looping array usi
 };
 
 
-//***************************Day 6********************************/
+//***************************Day 7********************************/
 // dom manipulatons
 // selection types:
 
@@ -236,7 +236,7 @@ document.querySelector('.class_name').value='new value'
 
 document.querySelector('.class_name').style.property_name="property"
 
-//***************************Day 7********************************/
+//***************************Day 8********************************/
 // using class list to manipulate css of particular elements using class names
 
 div.classList;                                // returns all the class associtated to div
