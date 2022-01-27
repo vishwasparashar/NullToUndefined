@@ -197,5 +197,12 @@ most of the time they are used in if else statements and other conditional state
     - .value is used to acess to text inside a particalur input fields like textbok and 
     - .setAttribute is used to change the attributes of the particular element tag
 
-## Mouse events(addEventListner()):
-   
+## eventListener(addEventListner()):
+  - handling click event
+
+
+*****************  DAY 7***************************
+- refactoring: check for repetative and try to reduce
+- we need to use class to manipulate css for particular element
+- event are usually store in form of object
+
