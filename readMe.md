@@ -201,7 +201,7 @@ most of the time they are used in if else statements and other conditional state
   - handling click event
 
 
-*****************  DAY 7***************************
+*****************  DAY 8***************************
 - refactoring: check for repetative and try to reduce
 - we need to use class to manipulate css for particular element
 - event are usually store in form of object
