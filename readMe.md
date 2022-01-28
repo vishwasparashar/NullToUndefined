@@ -201,13 +201,13 @@ most of the time they are used in if else statements and other conditional state
   - handling click event
 
 
-*****************  DAY 7***************************
+*****************  DAY 8***************************
 - refactoring: check for repetative and try to reduce
 - we need to use class to manipulate css for particular element
 - event are usually store in form of object
 
 
-*****************  DAY 8***************************
+*****************  DAY 9***************************
 - getElementById() is faster than querSelector()
 - once we assign Number value to .textcontent it gets converted to string
 - if we want varibles to be changed and accessed by all parts of code use declaration outside of all functions
