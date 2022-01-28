@@ -211,7 +211,11 @@ for(let i=0;i<excercise.length;i++){                         //looping array usi
 };
 
 
+<<<<<<< HEAD
 //****************day7********************************/
+=======
+//***************************Day 7********************************/
+>>>>>>> 6d931877b1303206872788586efea3669cd14b4d
 // dom manipulatons
 // selection types:
 
@@ -236,7 +240,11 @@ document.querySelector('.class_name').value='new value'
 
 document.querySelector('.class_name').style.property_name="property"
 
+<<<<<<< HEAD
 //************************day8********************************/
+=======
+//***************************Day 8********************************/
+>>>>>>> 6d931877b1303206872788586efea3669cd14b4d
 // using class list to manipulate css of particular elements using class names
 
 div.classList;                                // returns all the class associtated to div
@@ -245,7 +253,10 @@ div.classList;                                // returns all the class associtat
 document.addEventListener('keydown',function(e){
        console.log(e);            //this returs the event object that was created ehrn particular event was triggred      
 });
+<<<<<<< HEAD
 //************************day9********************************/
 div.classList.remove("class");
 div.classList.add('new_class');
 div.classList.toggle("class_name",condition) ;  //toggles the class if the conditon is true
+=======
+>>>>>>> 6d931877b1303206872788586efea3669cd14b4d
