@@ -206,3 +206,9 @@ most of the time they are used in if else statements and other conditional state
 - we need to use class to manipulate css for particular element
 - event are usually store in form of object
 
+
+*****************  DAY 8***************************
+- getElementById() is faster than querSelector()
+- once we assign Number value to .textcontent it gets converted to string
+- if we want varibles to be changed and accessed by all parts of code use declaration outside of all functions
+

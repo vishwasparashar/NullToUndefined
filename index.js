@@ -211,7 +211,7 @@ for(let i=0;i<excercise.length;i++){                         //looping array usi
 };
 
 
-//***************************Day 6********************************/
+//****************day7********************************/
 // dom manipulatons
 // selection types:
 
@@ -222,7 +222,7 @@ document.getElementsByName('name')
 document.querySelector('#id');
 document.querySelector('.class_name');
 document.querySelector('.span');                  // can be acessed using either of them
-document.querySelectorAll('h1');                  // will select all the h1 tags and stored it inside array
+document.querySelectorAll('h1');                  // will select all the h1 tags and stored it inside node list
 
 // few event listner and manipulation
 document.querySelector('.btn').addEventListener('click',function(){
@@ -236,15 +236,16 @@ document.querySelector('.class_name').value='new value'
 
 document.querySelector('.class_name').style.property_name="property"
 
-//***************************Day 7********************************/
+//************************day8********************************/
 // using class list to manipulate css of particular elements using class names
 
 div.classList;                                // returns all the class associtated to div
-div.classList.remove("class");
-div.classList.add('new_class');
-div.classList.toggle("class_name",condition) ;  //toggles the class if the conditon is true
 
 //events are stored inside objects
 document.addEventListener('keydown',function(e){
        console.log(e);            //this returs the event object that was created ehrn particular event was triggred      
 });
+//************************day9********************************/
+div.classList.remove("class");
+div.classList.add('new_class');
+div.classList.toggle("class_name",condition) ;  //toggles the class if the conditon is true
