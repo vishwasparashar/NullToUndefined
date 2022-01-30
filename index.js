@@ -214,7 +214,7 @@ for(let i=0;i<excercise.length;i++){                         //looping array usi
  
 //****************day7********************************/
  
-//***************************Day 7********************************/
+ 
  
 // dom manipulatons
 // selection types:
