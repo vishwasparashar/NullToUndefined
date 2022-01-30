@@ -264,8 +264,63 @@ most of the time they are used in if else statements and other conditional state
 
 
 
-**note: arrow functions dosen't have this keyword or obj argument**
+**note: arrow functions dosen't have this keyword or obj argument of its own**
+
+
 
     
+****************** **DAY 11***************************
+## more on execution context
+ 
+      - scoping:It controls where to acess variable and where not it cant be acessed
+      - lexical scoping:the scope of variables depends on where variable is declared
+      - scope: It is the environment around which a particular variable is declared
+      - scope of variable: it specifies the region till where the particular variable is valued
+## Types of scopes:
+  - global scope
+  - functional scope: ex: var variables
+  - block scope: acessable inside a part of particular code block
+      - example: let and const variables
+ 
+## scope chain: maintains variables
+  - varible lookup process:
+      - here the variables are first searched in the local function execution context if not found it searches in parent context like global execution context
+     - Scope chain works upwards no to sibling function can acess each others varible present
 
+## variable environment:
+  - hoisting: code scans for variables first
+## hoinsting table:
+     function declaration =>   hoisted:yes                                      initial-value:actual function   
+     scope:block(when strict mode is used);
+     let and const variable =>   hoisted:no                                   
+     initial-value:<unintialized>,tdz
+     scope:block;
+     var variables =>
+     hoisted:yes
+     intial-value:undefined
+     scope:function;
+
+
+## TDZ temporal dead zone: (used to avoid hoisting)
+  - variables tdz
+  - functions tdz
+
+
+## this keyword:
+  - it is special variable that is created in every execution context takes the value of the owner object of the function
+  - obj belonging to particular function call is the value taken by this
+  - this is dynamic
+      - this in (()=>{}) arrow function will not have its own this keyword uses lexical this ie global obj window
+  
+## method barrowing
+    newobj.method= obj.method this allows newobj to copy a method from already existing obj
+
+      
+
+
+
+
+
+
+  
    

@@ -211,11 +211,11 @@ for(let i=0;i<excercise.length;i++){                         //looping array usi
 };
 
 
-<<<<<<< HEAD
+ 
 //****************day7********************************/
-=======
+ 
 //***************************Day 7********************************/
->>>>>>> 6d931877b1303206872788586efea3669cd14b4d
+ 
 // dom manipulatons
 // selection types:
 
@@ -240,11 +240,10 @@ document.querySelector('.class_name').value='new value'
 
 document.querySelector('.class_name').style.property_name="property"
 
-<<<<<<< HEAD
-//************************day8********************************/
-=======
+  
+ 
 //***************************Day 8********************************/
->>>>>>> 6d931877b1303206872788586efea3669cd14b4d
+ 
 // using class list to manipulate css of particular elements using class names
 
 div.classList;                                // returns all the class associtated to div
@@ -253,10 +252,40 @@ div.classList;                                // returns all the class associtat
 document.addEventListener('keydown',function(e){
        console.log(e);            //this returs the event object that was created ehrn particular event was triggred      
 });
-<<<<<<< HEAD
+ 
 //************************day9********************************/
 div.classList.remove("class");
 div.classList.add('new_class');
 div.classList.toggle("class_name",condition) ;  //toggles the class if the conditon is true
-=======
->>>>>>> 6d931877b1303206872788586efea3669cd14b4d
+ 
+ 
+ //************************day11********************************/
+ let first_name='vishwas';
+ let  example={
+     dob:2001,
+     age:function (){
+         console.log(2022-this.dob);
+
+     },
+     greet:()=>console.log(`${first_name}, hello `),
+     lexical_this:()=>{console.log(this)}
+
+
+ };
+ example.age();
+ example.greet();
+ example.lexical_this();
+ let example2={
+     dob:3001,
+ }
+ example2.age=example.age;       // method borrow process  
+ console.log(example2.age())
+
+//tdz for functions and variables
+  function tdz(){
+    console.log(age);   // hoisting with initial value undefined
+    var age=21;                 
+    console.log(name);   // no hoisting also tdz 
+    const name="vishwas";
+}
+tdz();
