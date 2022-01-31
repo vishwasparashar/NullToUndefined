@@ -214,7 +214,7 @@ most of the time they are used in if else statements and other conditional state
 - once we assign Number value to .textcontent it gets converted to string
 - if we want varibles to be changed and accessed by all parts of code use declaration outside of all functions
 
-********************DAY 10***************************
+******************** DAY 10***************************
 
 ## javaScript working behind scenes
 
@@ -289,7 +289,7 @@ most of the time they are used in if else statements and other conditional state
 
 ## variable environment:
   - hoisting: code scans for variables first
-## hoinsting table:
+## hoisting table:
      function declaration =>   hoisted:yes                                      initial-value:actual function   
      scope:block(when strict mode is used);
      let and const variable =>   hoisted:no                                   
