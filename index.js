@@ -214,7 +214,7 @@ for(let i=0;i<excercise.length;i++){                         //looping array usi
  
 //****************day7********************************/
  
-//***************************Day 7********************************/
+ 
  
 // dom manipulatons
 // selection types:
@@ -289,6 +289,7 @@ div.classList.toggle("class_name",condition) ;  //toggles the class if the condi
     const name="vishwas";
 }
 tdz();
+<<<<<<< HEAD
 
 //************************day12********************************/
  
@@ -332,3 +333,5 @@ const vish={
     }
 };
 vish.abc();
+=======
+>>>>>>> 407a5b06239cf8457e1af70a657b55d88bf4288b
