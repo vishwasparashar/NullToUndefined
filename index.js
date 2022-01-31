@@ -289,3 +289,46 @@ div.classList.toggle("class_name",condition) ;  //toggles the class if the condi
     const name="vishwas";
 }
 tdz();
+
+//************************day12********************************/
+ 
+// code to show that a nested function inside object and problem related to it's this prperty
+let vish={
+    age:21,
+    add:function(){
+        function abc(){
+            console.log(this.age);
+        }
+        abc();
+
+    }
+
+};
+vish.add();     // produces undefined
+
+//solution-1 using arrow()={} function
+const vish={
+    age:21,
+    abc:function(){
+        let arrow=()=>{
+            console.log(this.age);
+             
+        };
+        arrow();
+    }
+};
+//soluton-2 using a variable to store this of parent element
+
+const vish={
+    age:21,
+
+    abc:function(){
+        let self=this;
+        let foo=function(){
+            console.log(self.age);
+             
+        };
+        foo();
+    }
+};
+vish.abc();

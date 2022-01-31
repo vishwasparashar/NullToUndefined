@@ -319,8 +319,16 @@ most of the time they are used in if else statements and other conditional state
 
 
 
-
-
+****************** **DAY 12***************************
+## regular function vs arrow function
+ - this keyword,argument obj
+## nested function inside a obj
+- here the nested function which inside a function cant call it self directly .
+- we need to create a variable or use arrow function
+## primitive datatypes vs obj
+- primtive types are stored in call stack
+- adress of obj which is in heap memmory is stored in call stack
+- using shallow cloning method to have effective method borrow process.
 
   
    
