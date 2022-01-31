@@ -289,7 +289,6 @@ div.classList.toggle("class_name",condition) ;  //toggles the class if the condi
     const name="vishwas";
 }
 tdz();
-<<<<<<< HEAD
 
 //************************day12********************************/
  
@@ -333,5 +332,11 @@ const vish={
     }
 };
 vish.abc();
-=======
->>>>>>> 407a5b06239cf8457e1af70a657b55d88bf4288b
+//using shallow copy technique to copy an object and change the value without changing the actual value of original object
+ 
+const wicketKeeper={role:"wicketkeeping",name:"Ms Dhoni"};
+const batsman ={role:"batting"}
+
+const copy=Object.assign(wicketKeeper,batsman);
+console.log(copy);
+console.log(wicketKeeper);
