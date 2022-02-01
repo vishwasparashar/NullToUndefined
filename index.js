@@ -340,3 +340,29 @@ const batsman ={role:"batting"}
 const copy=Object.assign(wicketKeeper,batsman);
 console.log(copy);
 console.log(wicketKeeper);
+
+//************************day13********************************/
+//array destructuring
+let arr1=[1,4,6,7,['vish','para']];
+//nested array destructuring assinging default values and skipping an element from obj
+const [no1, ,no3,no4,[first_name,last_name],no5='hello']=arr1; 
+console.log(no1,no3,no4,first_name,last_name,no5);
+//swapping variables using array desturcturing
+let abc=1;
+let xyz=2;
+[abc,xyz]=[xyz,abc];
+console.log(abc,xyz);
+
+//object destructuring 
+const user = {
+    id: 339,
+    name1: 'vishwas',
+    age1: 21,
+    education: {
+      degree: 'Masters',
+      degree2:'none'
+    }
+  };
+  //nested destruction 
+  const {name1,age1:old,education: {degree,degree2}} = user;
+  console.log(degree,degree2,name1,old);

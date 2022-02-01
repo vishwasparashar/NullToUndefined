@@ -330,5 +330,25 @@ most of the time they are used in if else statements and other conditional state
 - adress of obj which is in heap memmory is stored in call stack
 - using shallow cloning method to have effective method borrow process.
 
+****************** **DAY 13***************************
+# data structures 
+## Destructuring arrays:
+  - using array of variables enclosed within[]
+  - skipping particular element 
+  - swap using destructring
+  - nested array destructuring
+  - assign default value while destructuring
+
+## Destructuring objects:
+   - using keys enclosed inside {}
+   - it shud have same name as original key
+   - we can change the name of key by assigning value to new key
+   - can assign default values
+   - flower braces ie,{} expects a code block
+   - mutation of objects
+   - nested object destructuring
+   - can pass object as argument in function call and destructure them in function parameters
+    
+   
   
    
