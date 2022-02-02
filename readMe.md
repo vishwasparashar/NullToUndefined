@@ -350,5 +350,25 @@ most of the time they are used in if else statements and other conditional state
    - can pass object as argument in function call and destructure them in function parameters
     
    
+****************** **DAY 14***************************
+## Spread operator 
+ - spread operator on Arrays
+   - can be used to copy arrays and copy them
+   - can be used to merge to arrays
+   - difference between destructuring and spread operator
+     - in spread operator no variables are created,no items inside array can be skipped
+
+     - destructuring involves creation of variables,items in array can be skipped
+ - spread operator on Strings
+   - they will work as they work on arrays 
+   - they cant be used inside string template
+ - Spread operator on Object
+    - from es2018 we can use spread operator on objects as well
+    - this can be usedon creating shallow copy of object and modify the values
+    - it can replace Object.assign() method
+
+  - passing spread array inside function call
   
+ 
+   
    

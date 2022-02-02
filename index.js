@@ -363,6 +363,59 @@ const user = {
       degree2:'none'
     }
   };
-  //nested destruction 
+  //nested destructing
   const {name1,age1:old,education: {degree,degree2}} = user;
   console.log(degree,degree2,name1,old);
+
+  //************************day14********************************/
+ // spread operator
+  const hotel={
+    name:'op\'s kitchen ',
+    menu:['idly','dosa','pasta bolognse'],
+    order:function(waiter1,waiter2,waiter3){
+        const self=this;
+        console.log(`${waiter1} serve ${self.menu[0]},${waiter2} serve${self.menu[1]},${waiter3}  serve ${self.menu[2]} `);
+    }
+};
+// spread on arrays
+let addedmenu=[...hotel.menu,'liguini'];
+
+console.log(addedmenu);
+let waiter=['suresh','rathesh','mahesh']
+//passing spred array as arguments
+hotel.order(...waiter);
+// spread operator on objects to replace objects.assign() method 
+const compitator={...hotel,name:`ultra op's kitchen`};
+console.log(compitator);
+
+//rest pattern 
+
+//rest operator on arrays
+const[a,,b,...numbers]=[1,2,3,4,5,6];
+console.log(a,b,numbers);
+//rest operator on objects
+const timings={
+    sat:{
+        time:12
+    },
+    sun:{
+        time:9
+    },
+    mon:{
+      time:2  
+    },
+    tuesday:{
+        time:2
+    }
+}
+const{sun,...otherdays}=timings;
+console.log(sun,otherdays);
+// passing rest operator inside function 
+const sum=function(...numbers){
+    let add=0
+    for(i=0;i<numbers.length;i++){
+        add=add+numbers[i];
+    }
+     return(add);
+} 
+console.log(sum(1,2,3,5,7,9));
