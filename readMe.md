@@ -370,5 +370,20 @@ most of the time they are used in if else statements and other conditional state
   - passing spread array inside function call
   
  
-   
-   
+****************** **DAY 15***************************
+## using logical operator with other datatypes 
+  - or operator short circuiting
+    - here only the first value that is true is returned
+    - if there are all falsy values then the last false value is returned
+
+  - and operator shor ciruiting 
+    - here the first falsy  value is returned
+    - if there are all true values then the last true value is returned'
+## nullish coalescing operator(??) startedin {es2020}
+  - only null values are considered to be false the zero and empty string are considered to be true values
+  - works like or operator
+
+## Logical assignment operator
+  - or assignment operator(||=): assign value to variable only if the value of variable is already falsy
+  - nullish assignment operator(??=):assign value to variable only if the value is null or undefined for a given variable
+  - and assignment operator(&&=): assign value to variable only id the value of variable is truthy

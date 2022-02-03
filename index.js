@@ -419,3 +419,55 @@ const sum=function(...numbers){
      return(add);
 } 
 console.log(sum(1,2,3,5,7,9));
+
+ //************************day15********************************/
+
+// various cases of or and shorting
+let diet=true;
+let cheatday='burger';
+
+let orShorting=diet||cheatday;
+let andShorting=diet&&cheatday;
+console.log(andShorting);
+console.log(orShorting);
+let veg=false;
+let nonveg=true;
+ andShorting=veg&&nonveg;
+ orShorting=veg||nonveg;
+//nullish coelsecing
+let num1=0;
+let num2=3;
+let nullish=num1 ?? num2;
+console.log(nullish)
+
+// here we are using logical assign ment operator
+let rcb={
+    brand:'kholi',
+    quality:'loyal fanbase',
+    ipltrophies:0,
+      ban:0,
+
+};
+let csk={
+    captain:'dhoni',
+    quality:'iplwinners',
+     ban:'got banned',
+
+
+};
+//or assgignment operator
+ 
+rcb.captain||='kholi';
+csk.brand||='dhoni';
+console.log(rcb);
+console.log(csk);
+//nullish assignment operator
+rcb.ipltrophies ??='min one trophy exist';
+csk.ipltrophies ??='min one trophy exist';
+console.log(csk);
+console.log(rcb);
+//and assignment operator
+rcb.ban&&='got banned  for 2 years';
+csk.ban&&="got  banned for 2 years";
+console.log(csk);
+console.log(rcb);
