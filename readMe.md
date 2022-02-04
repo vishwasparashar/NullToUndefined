@@ -387,3 +387,24 @@ most of the time they are used in if else statements and other conditional state
   - or assignment operator(||=): assign value to variable only if the value of variable is already falsy
   - nullish assignment operator(??=):assign value to variable only if the value is null or undefined for a given variable
   - and assignment operator(&&=): assign value to variable only id the value of variable is truthy
+
+
+****************** **DAY 16***************************
+## for of loop:
+   - create for of loop without any counter to iterate through the iteralble
+   - however we dont have counter we cant get the index of particular element easily therefore we need to use Array_name.entries() by using this will store the array element and its index in form of map
+
+## Enhanced object literal (es6):
+  - to copy a set of object from outside object there is no need to create variable and assign value to them
+  - to declare a funtion inside no need to use function keyword
+  - can perform computtation on any propperty name by enclosing it inside[] box brackets
+
+## optional chaining(?.):
+  - can be used on arrays and object 
+  - it can help us to find the weather the particualer element or key exist and amd take necessary operation based on that
+  - it can reduce usage of if statement
+
+## looping on object(indirectly):
+  - to loop on keys use Object.keys(obj_name)
+  - to loop on values use Object.values(obj_name)
+  - to loop on both the values use Object.entries(obj_name)

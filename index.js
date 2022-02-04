@@ -471,3 +471,59 @@ rcb.ban&&='got banned  for 2 years';
 csk.ban&&="got  banned for 2 years";
 console.log(csk);
 console.log(rcb);
+
+//************************day16********************************/
+
+// using for of loop
+let days=['weekdays','saturday','sunday'];
+//using .entries() to get index of the element
+for(let day of days.entries())console.log(`${day[0]+1} :${day[1]}`);
+for(let [index,element] of days.entries())console.log(`${index} :${element}`);
+
+let navbar=['gonext','goback']
+const modules={
+    [navbar[0]]:'working',      //compute with key names
+    [navbar[1]]:'working',
+    scrollbar:'working',
+    hamburger:'working'
+    }
+    console.log(modules);
+    //using optional chaining on objects
+    modulesChecker=function(){
+        console.log(modules?.slider??'noslider exists');
+    }
+    modulesChecker();
+
+let testing={
+    functionality:'working',
+    ui:'working',
+    ux:'layed out proper',
+    modules,                     //here no variable is needed to copy object
+
+    testingchecks(){             // no function keyword
+        if(this.ui&&this.ux&&this.functionality){
+            return('good to launch');
+        };
+    },
+};
+//using optional chaining to check to check for method
+console.log(testing.moduleschecks?.()??'method dosent exist');
+console.log(testing.testingchecks?.() ??'method dosent exist');
+
+// foooping through objects indirectly by using .values,.keys,.entries
+const skills={
+    sports:{
+        football:'yes',
+        chess:'yes',
+    },
+    python:'yes',
+
+
+};
+
+let keys=Object.keys(skills);
+for(const key of keys)console.log(key);
+let values=Object.values(skills);
+for(const value of values)console.log(value);
+let entries=Object.entries(skills.sports);
+for(const entry of entries)console.log(entry);
