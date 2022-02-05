@@ -408,3 +408,36 @@ most of the time they are used in if else statements and other conditional state
   - to loop on keys use Object.keys(obj_name)
   - to loop on values use Object.values(obj_name)
   - to loop on both the values use Object.entries(obj_name)
+
+****************** **DAY 17***************************
+## sets (es6):
+  - its i also an iterable
+  - stores unique values
+  - set functions
+     - Set.size(),Set.add(),Set.delete(),Set.clear(),set.has()
+  - retriving data is not needed
+  - spread operator on sets
+
+## Maps
+  - mapping values to keys
+  - keys can be of any datatype
+  - map functions
+     - Map.set()
+     - Map.delete()
+     - Map.get()
+     - map.has()
+  - array as key 
+     - should declare array first and then assign it as key
+
+  - converting object  to map using object.entries()
+  - converting map to array uing spread operator
+  - two ways of creating maps using set() and other is passing array of arrays
+
+difference between object and map
+ | Point     | Object                      | Map                            |
+| --------- | --------------------------- | ------------------------------ |
+| Iterable  | Not directly iterable       | Directly Iterable              |
+| Size      | Does not have size property | Has the size property          |
+| Key Type  | Must Be string or symbol    | Can be any DataType            |
+| Key Order | They are not well ordered   | They are oredered by insertion |
+| Defaults  | Have Default Keys           | Do not have default keys       |

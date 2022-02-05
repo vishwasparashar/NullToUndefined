@@ -510,7 +510,7 @@ let testing={
 console.log(testing.moduleschecks?.()??'method dosent exist');
 console.log(testing.testingchecks?.() ??'method dosent exist');
 
-// foooping through objects indirectly by using .values,.keys,.entries
+// looping through objects indirectly by using .values,.keys,.entries
 const skills={
     sports:{
         football:'yes',
@@ -527,3 +527,83 @@ let values=Object.values(skills);
 for(const value of values)console.log(value);
 let entries=Object.entries(skills.sports);
 for(const entry of entries)console.log(entry);
+
+
+
+//************************day17********************************/
+// sets
+let applicant1={
+    name:'vicky',
+    role:'business manager'
+};
+let applicant2={
+    name:'licy',
+    role:"senior developer"
+};
+let applicant3={
+    name:'bond',
+    role:'business analyst'
+};
+let applicant4={
+    name:"lucy",
+    role:"business analyst"
+};
+let roles=[applicant1.role,applicant2.role,applicant3.role,applicant4.role];
+console.log(roles);
+let uniqueroles=new Set(roles);
+console.log(`${uniqueroles.size} roles are up for grabs`);
+console.log(uniqueroles);
+qualified=[applicant1,applicant2,applicant3];
+for(const q of qualified){
+    uniqueroles.delete(q.role);
+    console.log(uniqueroles);
+}
+userRole=prompt('enter your role');
+if(uniqueroles.has(userRole)){
+    console.log('we hav an opeaning');
+
+}else{
+    console.log('we dont have opeaning for you role ');
+}
+
+
+// maps
+const mapping = new Map();
+mapping.set("name", "vishwas").set("age", 21).set("passion",'cricket');
+console.log(mapping);
+
+for (const key of mapping.keys()) {
+	console.log(key);
+}
+
+for (const values of mapping.values()) {
+	console.log(values);
+}
+
+for (const [key, value] of mapping.entries()) {
+	console.log(key, value);
+}
+
+// Other way of creating map
+const map1 = new Map([
+	['fname','vishwass'],
+	["age", 24],
+	["profession", "cricketer"],
+	[true, "he is fast bowler"],
+]);
+console.log(map1);
+
+console.log(map1.get('fname'));
+
+console.log(map1.size);
+
+map1.delete('fname');
+console.log(map1);
+
+console.log(map1.has("age"));
+
+console.log(typeof map1);
+console.log(map1 instanceof Map);
+
+map1.clear();
+console.log(map1);
