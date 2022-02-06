@@ -441,3 +441,32 @@ difference between object and map
 | Key Type  | Must Be string or symbol    | Can be any DataType            |
 | Key Order | They are not well ordered   | They are oredered by insertion |
 | Defaults  | Have Default Keys           | Do not have default keys       |
+
+
+
+****************** **DAY 18***************************
+## String operations
+ - string[index]
+ - String.length
+ - String.indexOf()
+ - String.lastIndexOf()
+ - String.slice(begin_index,end_idex) we can use negative indexing
+ - String is primitive datatype still we can call methods because it uses boxing method where the String turns to Object implicitly
+ - String.toLowerCase()
+ - String.toUpperCASe()
+ - String.trim()
+ - String.trimStart()
+ - String.trimEnd()
+ - String.includes()
+ - String.startsWith()
+ - String.endsWith()
+ - String.replace()
+ - String.replaceAll()
+ - String.replace(using regular expression)regularexpresssion=/string/
+ - String.split() 
+ - String.join()
+ - String.padding() //default it will add space
+ - String.paddingStart()
+ - String.paddingEnd()
+ - String.repeat()
+ 

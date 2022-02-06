@@ -607,3 +607,10 @@ console.log(map1 instanceof Map);
 
 map1.clear();
 console.log(map1);
+
+//************************day18********************************/
+const underscore='first_name';
+const camelCase=underscore.split('_');
+const[first,_name]=camelCase;
+const final=_name.replace(_name[0],_name[0].toUpperCase());
+console.log(first+final);
