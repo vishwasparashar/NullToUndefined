@@ -614,3 +614,22 @@ const camelCase=underscore.split('_');
 const[first,_name]=camelCase;
 const final=_name.replace(_name[0],_name[0].toUpperCase());
 console.log(first+final);
+
+//************************day19********************************/
+
+let fun2=function(a=20,b=7){
+    return(c=a+b);
+}
+console.log(fun2(30));        // since the value for b is not passed it gets the default value but a value gets overridden
+let test='1025f'
+let test_obj={
+    fname:"vishwas",
+    lname:"parashar"
+}
+let fun1=function(code,obj){
+       code="138975";
+       obj.lname="peter";
+};
+fun1(test,test_obj);
+console.log(test);
+console.log(test_obj) ;             //here it sthows that lanme is cahnges as it is refernce type not primitve type 

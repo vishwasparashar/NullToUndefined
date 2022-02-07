@@ -470,3 +470,21 @@ difference between object and map
  - String.paddingEnd()
  - String.repeat()
  
+
+ ****************** **DAY 19***************************
+ ## More on functions
+   - passing default parameter
+   - to skip an argument define it as undefined in funtion call
+
+## how passing arguments work
+   - passing value vs refernce
+   ### note :no pass by reference exist in  js
+##  first class vs higher oreder functions
+   - first class function :
+       - Treated simple values
+       - Treated as another obj
+       - methods can be called on functions
+
+   - higheer order functions:
+       - Returns a function
+       - takes function as arguments
