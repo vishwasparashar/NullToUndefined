@@ -485,6 +485,34 @@ difference between object and map
        - Treated as another obj
        - methods can be called on functions
 
-   - higheer order functions:
+   - higher order functions:
        - Returns a function
        - takes function as arguments
+
+
+ ****************** **DAY 20***************************
+## higher and lower order functions
+   - passing argument inside function
+   - call back functions are used on argument
+## returning lower order function
+   - two ways to retunr funtion 
+     - using variable
+     - using direct arguments
+
+## call and apply methods:
+  - used to set this keyword manually
+  - they call function
+  - .call(obj_name,function_argumets)
+  - .apply(obj_name,function_arguments array)
+  - today we can use .call to ti pass even array by using spread operators
+## The Bind method: 
+  - they don't call function 
+  - only this keyword is set
+  - also can use to set default arguments
+  - using bind will create new function
+
+## IIFE immediately invoked function:
+  - no funtion_name is needed to declare function or call
+  - to support encapsultion and provide block to variables
+  - also used to execulte the function only once
+  
