@@ -1,3 +1,5 @@
+'use strict';
+
 /*                                         DAY1                */
 
 
@@ -708,3 +710,69 @@
 //  const t20=rr_calculator.bind(null,20);
 //  console.log(t20(200));
 
+
+/* closure examples  and also uisnf iife*/ 
+ 
+// (function(){
+//     const header=document.querySelector('h1')
+//     header.style.color='red';
+//     document.querySelector('body').addEventListener('click',function  () {
+//             header.style.color='blue';                       // even though if  the global execution contest gets popped out we were still able to acess the variable header becalue it states in closure  
+//     });
+        
+    
+// })();
+
+/***********************day21********************************/
+// more on arrays
+/* let demo1=[10,45,90,100,89];
+let demo2=[100,300,350,750];
+let demo_slice=demo1.slice(1,4);
+console.log(demo_slice)
+let demo1_splice=demo1.splice(-1);
+console.log(demo1_splice);     // returns the element that is removed from original array
+console.log(demo1);           // shows that demo1 is mutated
+
+demo2.reverse();
+console.log(demo2);          // original array gets mutated
+
+let demo_concated=demo1.concat(demo2);
+console.log(demo_concated);   // original array is not affected
+
+let demo_join=demo1.join('-');
+console.log(demo_join);       // converts to string
+
+let last=demo1.at(-1);        // using negative indexing
+
+console.log(last);      
+
+// loop for each loop on arrays
+demo1.forEach(function(dem,index,arr){
+    console.log(`${dem}*${index}=${dem*index}`);
+    if(index==demo1.length-1){
+          console.log(arr);
+    }
+
+
+      
+});
+// for each on map
+let demo_map=new Map([
+    ['fname','vishwas'],
+    ['hobby','cricket'],
+    ['proession','developer'],
+    ['favrouitelanguage','javascript'],
+
+]);
+demo_map.forEach(function(value,key,map){
+    console.log(`${key}: ${value}`);
+    if(key==='favrouitelanguage'){
+        console.log(map);
+    }
+});
+let demo_set=new Set([1,3,4,5,6,8,9,0,0]);
+demo_set.forEach(function(vlaue,key,map){
+    console.log(vlaue);
+    console.log(key);
+  ;
+}) */

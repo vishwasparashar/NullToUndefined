@@ -515,4 +515,42 @@ difference between object and map
   - no funtion_name is needed to declare function or call
   - to support encapsultion and provide block to variables
   - also used to execulte the function only once
+
+  ****************** **DAY 21***************************
+## Closures:
+  - it occurs implicitly
+  - a function has acess to variable environment of  of execcution cntext in wich it was created
+  - when variable is not fount  js will check closure which contains varible environment of already executed Ec
+  to check the closure uses  
+  - closure property gets proprity over scope chain
+
+## More on arrays
+  - arr.slice()
+      - can use negative indexing
+      - dose't mutate original array
+      - .slice() is passed without argument then it produces shallow copy
+  - .splice()
+      - it removes the specified index can use negative indexing
+      - mutates original array
+  - .reverse()
+      - it mutates original array 
+  - .concat()
+      - dose'nt mutate original
+      - combiles 2 arrays
+  - .join('char')
+      -joins two array with the specified character
+  - .at()
+      - used to retrive data at particular index
+      - can use negative indexing
+## for each loop on arrays
+  - array.forEach(function(current_item,idex,array))
+  - current_item: will act like variable for the element of array that enters loop
+  - index: gives indexing
+  - array: it holds entire array
+  - continue and break can't be applied
+## for each loop on map and set:
+  - map.forEach(function(value,key,map))
+  - we know that data is stored in form of key value pairs in map
+  - set.forEach(function(vlaue,key,set))
+  - note: that order of arguments should not change
   
