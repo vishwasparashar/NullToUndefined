@@ -553,4 +553,27 @@ difference between object and map
   - we know that data is stored in form of key value pairs in map
   - set.forEach(function(vlaue,key,set))
   - note: that order of arguments should not change
-  
+
+****************** **DAY 22***************************
+## Creating dom
+  - using .insertAdjacenHTML();
+     - takes two arguments 'positon and  html string'
+     - position are:
+       - beforebegin : before beging of the particular html element
+       - afterbegin  : after beging of the particular html element
+       - beforeend   : before ending of particular html element
+       - afterend    : after the ending of particular html element
+
+
+## data transformation :
+   - .map():applies operation and returns new array
+        - takes function as argument inside function  we can specify like for each loop
+        - dosent mutate original array
+
+   - .filter():
+        - returns new array after element is put through a particular test
+        - dosen't mutate original array
+   - .reduce():
+       - it takes 4 arguments one is called as acccumulator and other three are same
+       - mainly gets single out put from the array
+       - we can specify the initial value of the accumulator

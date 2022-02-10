@@ -636,7 +636,13 @@
 // console.log(test);
 //   console.log(test_obj) ;             //here it sthows that lanme is cahnges as it is refernce type not primitve type 
 
+
+
+
 /***********************day20********************************/
+
+
+
 // using higher oand lower order function
 // passing lower order function as argument
 
@@ -723,7 +729,11 @@
     
 // })();
 
+
+
 /***********************day21********************************/
+
+
 // more on arrays
 /* let demo1=[10,45,90,100,89];
 let demo2=[100,300,350,750];
@@ -776,3 +786,45 @@ demo_set.forEach(function(vlaue,key,map){
     console.log(key);
   ;
 }) */
+
+/***********************day22********************************/
+const before_begin=`<div>using before begin results in content coming over here</div>`;
+const after_begin=`<div>using after begin results in content coming over here</div>`;
+const before_end=`<div>using before end results in content coming over here</div>`
+const ater_end=`<div>using after end results in content coming over here</div>`
+const demo=document.querySelector('.adjacent');
+console.log(demo);
+demo.insertAdjacentHTML('beforebegin',before_begin);
+demo.insertAdjacentHTML('afterbegin',after_begin);
+demo.insertAdjacentHTML(`beforeend`,before_end);
+demo.insertAdjacentHTML(`afterend`,before_begin);
+
+// using map() 
+const names=['vishwas','parashar'];
+
+// let initials1=names.map(function(name){
+//     return name[0];
+// }).join('').toUpperCase();
+let initials1=names.map(name=>name[0]).join('').toUpperCase();
+
+console.log(initials1);
+// using filter
+const sentence='hello there i am tired Why am I doing all the fucking work?';
+let words=sentence.split(' ');
+const filtered=words.filter(function(word,ind,ar){
+     
+    return word!='fucking';
+    
+}).join(' ');
+console.log(filtered);
+
+// using reduce also using accumulator 
+const largest_word=words.reduce(function(acc,word,idex,arr){
+  if(acc>word.length){
+      return acc;
+  }else{
+      return word.length;
+  }
+},0);
+console.log(largest_word);
+    
