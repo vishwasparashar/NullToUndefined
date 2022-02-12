@@ -577,3 +577,44 @@ difference between object and map
        - it takes 4 arguments one is called as acccumulator and other three are same
        - mainly gets single out put from the array
        - we can specify the initial value of the accumulator
+
+
+
+
+****************** **DAY 23***************************
+## method chaining :
+  - using more than one array method one after the other on same array
+  - to check the particular output of a method we can use array argument that gets the array
+  - try not to over use
+  -it is better if we dont use mutating methods while we are chaining
+
+## .find(condition) method:
+  - it retrives the data
+  - it returns the first element that satisfies the condition in that array
+  - it dosen't return array like filter method
+
+## .findIndex() method:
+  - it returns the index of the particular element
+  - it takes functions argument and according to and the value returned from that function the findindex method is applied 
+
+## *dom methods :* 
+  - e.preventDefault() it is the method used to stop the event that occurs defaultly 
+  - .blur() used to remove the focus fro a particular element
+
+## .some() :
+  - it will return true of false if the condition is satisfied or not
+  - it  returns true if even a single element satisfies the condition
+  - it takes call back function
+
+## .every():
+  - it will return true  if all the elements in  array satisfies the consition
+  - it takes callback function as argument
+
+## .flat(level):
+   - it will return a single array if  there is nested array
+   - it takes laevel of nesting as argument
+## .flatMap():
+   - it is combination of map and flat 
+   - it can do single level flat however
+   
+ 

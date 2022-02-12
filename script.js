@@ -828,3 +828,39 @@ const largest_word=words.reduce(function(acc,word,idex,arr){
 },0);
 console.log(largest_word);
     
+/***********************day23********************************/
+const student_marks=[12,30,45,67,98,100,46,55]
+// method chaining using  on arays
+const highest_pass=student_marks.map((mark)=>(mark)/100*100).filter(mark=>mark>35).reduce((acc,mark)=>{
+  if(mark>acc){
+    acc=mark;
+    return acc;
+  }
+  return acc;
+},0)
+console.log(highest_pass);
+//find () method
+const first_student_to_pass=student_marks.find(mark=>mark>35);
+console.log(first_student_to_pass);
+//findIndex() method used here
+const idex_of_highest=student_marks.findIndex(mark=>mark===100);
+console.log(idex_of_highest)
+// using some() returns checks true or false
+const some_pass=student_marks.some(mark=>mark>35);
+console.log(some_pass);
+// using every() returns true if all the element satisfy the condition
+const all_pass=student_marks.every(mark=>mark>35);
+console.log(all_pass);
+// flat method with default level is 1
+const level1_nested=[[1,2,3],6,5,[9,10]];
+const level1_flat=level1_nested.flat();
+console.log(level1_flat);
+// flat argumet as 2 which checks 2 levels
+const level2_nested=[[1,2,3,[6,7]],9,10];
+const level2_flat=level2_nested.flat(2);
+
+const arr=[1,2,5,7,9];
+// flat map() combination of flat and map()
+const flat_map=arr.flatMap(x=>[x,x*2]);
+console.log(flat_map);
+
