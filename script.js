@@ -788,79 +788,116 @@ demo_set.forEach(function(vlaue,key,map){
 }) */
 
 /***********************day22********************************/
-const before_begin=`<div>using before begin results in content coming over here</div>`;
-const after_begin=`<div>using after begin results in content coming over here</div>`;
-const before_end=`<div>using before end results in content coming over here</div>`
-const ater_end=`<div>using after end results in content coming over here</div>`
-const demo=document.querySelector('.adjacent');
-console.log(demo);
-demo.insertAdjacentHTML('beforebegin',before_begin);
-demo.insertAdjacentHTML('afterbegin',after_begin);
-demo.insertAdjacentHTML(`beforeend`,before_end);
-demo.insertAdjacentHTML(`afterend`,before_begin);
+// const before_begin=`<div>using before begin results in content coming over here</div>`;
+// const after_begin=`<div>using after begin results in content coming over here</div>`;
+// const before_end=`<div>using before end results in content coming over here</div>`
+// const ater_end=`<div>using after end results in content coming over here</div>`
+// const demo=document.querySelector('.adjacent');
+// console.log(demo);
+// demo.insertAdjacentHTML('beforebegin',before_begin);
+// demo.insertAdjacentHTML('afterbegin',after_begin);
+// demo.insertAdjacentHTML(`beforeend`,before_end);
+// demo.insertAdjacentHTML(`afterend`,before_begin);
 
-// using map() 
-const names=['vishwas','parashar'];
+// // using map() 
+// const names=['vishwas','parashar'];
 
-// let initials1=names.map(function(name){
-//     return name[0];
-// }).join('').toUpperCase();
-let initials1=names.map(name=>name[0]).join('').toUpperCase();
+// // let initials1=names.map(function(name){
+// //     return name[0];
+// // }).join('').toUpperCase();
+// let initials1=names.map(name=>name[0]).join('').toUpperCase();
 
-console.log(initials1);
-// using filter
-const sentence='hello there i am tired Why am I doing all the fucking work?';
-let words=sentence.split(' ');
-const filtered=words.filter(function(word,ind,ar){
+// console.log(initials1);
+// // using filter
+// const sentence='hello there i am tired Why am I doing all the fucking work?';
+// let words=sentence.split(' ');
+// const filtered=words.filter(function(word,ind,ar){
      
-    return word!='fucking';
+//     return word!='fucking';
     
-}).join(' ');
-console.log(filtered);
+// }).join(' ');
+// console.log(filtered);
 
 // using reduce also using accumulator 
-const largest_word=words.reduce(function(acc,word,idex,arr){
-  if(acc>word.length){
-      return acc;
-  }else{
-      return word.length;
-  }
-},0);
-console.log(largest_word);
+// const largest_word=words.reduce(function(acc,word,idex,arr){
+//   if(acc>word.length){
+//       return acc;
+//   }else{
+//       return word.length;
+//   }
+// },0);
+// console.log(largest_word);
     
 /***********************day23********************************/
-const student_marks=[12,30,45,67,98,100,46,55]
-// method chaining using  on arays
-const highest_pass=student_marks.map((mark)=>(mark)/100*100).filter(mark=>mark>35).reduce((acc,mark)=>{
-  if(mark>acc){
-    acc=mark;
-    return acc;
-  }
-  return acc;
-},0)
-console.log(highest_pass);
-//find () method
-const first_student_to_pass=student_marks.find(mark=>mark>35);
-console.log(first_student_to_pass);
-//findIndex() method used here
-const idex_of_highest=student_marks.findIndex(mark=>mark===100);
-console.log(idex_of_highest)
-// using some() returns checks true or false
-const some_pass=student_marks.some(mark=>mark>35);
-console.log(some_pass);
-// using every() returns true if all the element satisfy the condition
-const all_pass=student_marks.every(mark=>mark>35);
-console.log(all_pass);
-// flat method with default level is 1
-const level1_nested=[[1,2,3],6,5,[9,10]];
-const level1_flat=level1_nested.flat();
-console.log(level1_flat);
-// flat argumet as 2 which checks 2 levels
-const level2_nested=[[1,2,3,[6,7]],9,10];
-const level2_flat=level2_nested.flat(2);
+// const student_marks=[12,30,45,67,98,100,46,55]
+// // method chaining using  on arays
+// const highest_pass=student_marks.map((mark)=>(mark)/100*100).filter(mark=>mark>35).reduce((acc,mark)=>{
+//   if(mark>acc){
+//     acc=mark;
+//     return acc;
+//   }
+//   return acc;
+// },0)
+// console.log(highest_pass);
+// //find () method
+// const first_student_to_pass=student_marks.find(mark=>mark>35);
+// console.log(first_student_to_pass);
+// //findIndex() method used here
+// const idex_of_highest=student_marks.findIndex(mark=>mark===100);
+// console.log(idex_of_highest)
+// // using some() returns checks true or false
+// const some_pass=student_marks.some(mark=>mark>35);
+// console.log(some_pass);
+// // using every() returns true if all the element satisfy the condition
+// const all_pass=student_marks.every(mark=>mark>35);
+// console.log(all_pass);
+// // flat method with default level is 1
+// const level1_nested=[[1,2,3],6,5,[9,10]];
+// const level1_flat=level1_nested.flat();
+// console.log(level1_flat);
+// // flat argumet as 2 which checks 2 levels
+// const level2_nested=[[1,2,3,[6,7]],9,10];
+// const level2_flat=level2_nested.flat(2);
 
-const arr=[1,2,5,7,9];
-// flat map() combination of flat and map()
-const flat_map=arr.flatMap(x=>[x,x*2]);
-console.log(flat_map);
+// const arr=[1,2,5,7,9];
+// // flat map() combination of flat and map()
+// const flat_map=arr.flatMap(x=>[x,x*2]);
+// console.log(flat_map);
 
+
+/***********************day24********************************/
+
+//sorting string using just sort
+// const eng=['abraham','zebre','cat','abc','next'];
+// const eng_sort=eng.sort();
+// console.log(eng_sort);
+// // sorting single digit lnumber using jsust sort
+// const single_dig=[1,3,2,9,5];
+// const single_sort=single_dig.sort();
+// console.log(single_sort);
+// // sorting douhble digits and integer using one call back
+// const double_diginteger=[-22,-45,-56,0,500,3,6,9];
+// const double_sort=double_diginteger.sort((a,b)=>a-b);
+// console.log(double_sort);
+// //using array constructor  to create arrey
+// const arr_demo1=new Array(7,8,9,10,80);
+// console.log(arr_demo1);
+// // using fill() method to populate
+// const arr_demo2=new Array(7);
+// arr_demo2.fill(5,0,5);
+// console.log(arr_demo2);
+// //using .from to create an array with a condition mentioned in call back
+// const arr_demo3=Array.from({length:5},(_,i)=>i+3);
+// console.log(arr_demo3);
+
+
+
+// //nodelist is returned when we use queryselectorAll() we need to convert that to array 
+
+// const demos=document.querySelectorAll('.demo');
+
+// //converting  nodelist ot arrays using Array.from
+
+// const arr_demos=Array.from(demos);   //here node list is turned arrays
+// console.log(arr_demos);
+// console.log(arr_demos.map(demo=>demo.textContent));

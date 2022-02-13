@@ -617,4 +617,34 @@ difference between object and map
    - it is combination of map and flat 
    - it can do single level flat however
    
+ ****************** **DAY 24***************************
+ ## Sorting array:
+   - .sort() method
+   - we can use this alone to sort strings and single digint numbers
+   - we can't use it directly on more than one number digits 
+   - to sort multiple number digit and negative numbers we need to pass a call back function
+   - .sort((a,b)=>a-b) if this returns negative number then the position of a and b inter changes if it returns  postive number it dosent change
+
+## Creating array(other methods):
+   - using Array() constructor
+   - if we use only single argument then only the array size will be allotted 
+   - no map method can be used to populate data inside emepty array
+   - to populate data we can use .fill(element,begin_index,last_index)
+
+## Array(obj).from({lenght:number},call_back):
+   - can create array and use call back to populate the array
+   - can use them to convert other data structure to arrays
+
+## nodelist to array
+   - Array.from()
+   - spred operator
+## when and where:
+   - these are the needs that one should consider
+       - should the operation return new array
+       - should the operation mutate original array
+       - should the operation return array Index
+       - should the operation return element
+       - should it return new string
+       - should the operation just loop through arrray
+       - should the operation check weather it includes
  
