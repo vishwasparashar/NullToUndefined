@@ -901,3 +901,70 @@ demo_set.forEach(function(vlaue,key,map){
 // const arr_demos=Array.from(demos);   //here node list is turned arrays
 // console.log(arr_demos);
 // console.log(arr_demos.map(demo=>demo.textContent));
+
+
+/***********************day25********************************/
+// bug in js
+console.log(.1+.2);
+// conversion to num
+console.log(+'23'+4);
+// using parse
+console.log(Number.parseInt('50px',10)+50+parseFloat('3.59 cm'));
+// few more methods on Number
+console.log(isNaN(parseInt('px50')));
+console.log(isFinite(23/0));
+console.log(Number.isInteger(-45));
+
+//Math  methods
+
+const SQRT=Math.sqrt(25.77);
+console.log(SQRT);
+ //without using Math library
+console.log(25 **(1/2));
+console.log(27**(1/3));
+// min and max
+console.log(Math.max(1,3,'89'));
+console.log(Math.min(1,3,'89'));
+//conversion to decimal
+const to_fixed=1234;
+console.log(to_fixed.toFixed(2));
+// numerical separtion
+const num_sep_demo=1_00_000;
+console.log(num_sep_demo);
+// big int declaration
+const big=12345888900n;
+console.log(big);
+const big2=  BigInt(12345888900);
+console.log(big2);
+// gets the max number that cna be computed by the js
+console.log(Number.MAX_SAFE_INTEGER);
+const big3=big+big2;
+console.log(big3);
+// console.log(big3+1);    //error cant mix big int with numbers type
+// operations on bigInt 
+console.log(big3>big2);
+console.log(big3*big2);
+console.log(big3/big2);
+
+
+//Dates object
+//creating dates by passing string
+const date1=new Date('aug 01 2004');
+console.log(date1);
+// creating dates by passing normal Number
+const date2=new Date(2001,07,20,06,30,0);
+console.log(date2);
+// gets the time that unix was launched
+const time_till=new Date(0);
+console.log(time_till);
+// few methods on date and retrinvalof data
+console.log(time_till.getFullYear());
+console.log(time_till.getDay());
+console.log(time_till.getDate());
+console.log(time_till.getHours());
+time_till.setFullYear(2091);
+console.log(time_till);
+
+console.log(Date.now());
+console.log(Date.getTime());
+

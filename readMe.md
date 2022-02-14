@@ -648,3 +648,56 @@ difference between object and map
        - should the operation just loop through arrray
        - should the operation check weather it includes
  
+
+  ****************** **DAY 25***************************
+  ## fractional bug in array
+   - .1+.2 will not be equal to .3 but a wrong value this leads to mathematical inaccuracy in js
+   - Number has a limit of 64 bits where 54 for digits remaining for sign of the number
+  ## conversion from string to number
+   - when we specify + in front of string value of a number it gets converted by type coercion
+   - ### parsing:
+      - Number.pareInt('num',radix)
+      - first argument is the value however second argument is radix which specifies the format of the value that needs to be converted
+  - Number methods dosent need Number. dosen't need to be specified as it is global method
+  - .isNan() checks weather the given element is NaN type or not
+  - .isFinite() checks the given value is the element of finite value or not
+  - .isInterger() checks for the type of Integer
+  - Number.toFixed(8) returns the nuber of fractional number after the decimal point specified inside as arguments
+  - Number.MAX_SAFE_INTEGER : gets the maximum no of size of digits that is stored 
+## Math library functions
+  - Math.sqrt(num);
+  - .random()
+  - .trunc()
+  - .floor()
+  - .ceil()
+  - .round()
+
+## modulus or remainder operator(%)
+## Numeric separator: 
+   - used to separate the numbers with _ how ever when js reads then the underscore is discarded
+   - has to be used only between two numbers however can't be used to start or end of numbers
+## BigInt: 
+  - declaring bigInt
+     - without uisng constructor: just mention n aflter all digits
+     - using  BigInt() consturctor
+     - can't mix BigInt types with normal number types
+     - can't use Math library operation on BigInt
+     - can perform normal mathematical operations on 2 BigInt types
+## Date and Time
+  - declaring date:
+     - new Date()
+     - can pass the value as string
+     - can pass the normal number as arguments
+     - if no hr sec and min is mentioned then default 00 will be taken
+     - if new Date(0) is passed then it gets the time that unix was launched
+## methods on Date:
+  - Date is just another object so we have many methods on on the obj like:
+  - .getfullYear()
+  - .getDay()
+  - .gethours()
+  - .IsoString()
+  - .getDate()
+  - .getTime()
+  - .now()
+  - .setFullyear()
+
