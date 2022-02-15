@@ -905,7 +905,7 @@ demo_set.forEach(function(vlaue,key,map){
 
 /***********************day25********************************/
 // bug in js
-console.log(.1+.2);
+/*console.log(.1+.2);
 // conversion to num
 console.log(+'23'+4);
 // using parse
@@ -966,5 +966,56 @@ time_till.setFullYear(2091);
 console.log(time_till);
 
 console.log(Date.now());
-console.log(Date.getTime());
+console.log(Date.getTime()); */
 
+/***********************day26********************************/
+
+const date1=new Date();
+
+const date2=new Date('sun 15 march 2022');
+console.log(date2);
+console.log(date1);
+const date3=date2-date1;
+console.log(date3/(1000*60*60*24));
+
+
+// using dateTimeFormat()
+const now=new Date();
+const local=navigator.language; // gets the data language code from browser
+const option={
+    hour:'numeric',
+    min:'numeric',
+    day:'numeric',
+    sec:'numeric',
+    year:'numeric',
+    weekday:'long'
+}
+const format=new Intl.DateTimeFormat(local,option).format(now);
+console.log(format);
+
+
+// using numberFormat()
+const num1=123456789.900;
+const option={
+ style:'unit',     //currency // percentage
+ unit:'mile-per-hour'
+
+}
+console.log(Intl.NumberFormat('en-GB',option).format(num1));
+
+//using setTimeout and clearTimeout 
+const timer=setTimeout(()=>'it is running after 3 sec',5000);
+ console.log('wait for 5 sec ');
+clearTimeout(timer);
+//using setInterval and clearInterval
+let counter = 10;
+const stop=setInterval(function(){
+  console.log(counter);
+  counter--
+  if (counter === 0) {
+    console.log("HAPPY NEW YEAR!!");
+  }
+    if(counter<0){
+        clearInterval(stop);
+    }
+}, 1000)

@@ -701,3 +701,17 @@ difference between object and map
   - .now()
   - .setFullyear()
 
+
+  ****************** **DAY 26***************************
+  ## Using dates operations
+   - when we use arithmatic operaton on date we it retuns answer in ms
+
+  ## International date timing
+  - Intl.DateTimeFormat('local',options).format;
+  - iso language code should be passed in local
+  ## International numberformat
+  - Intl.NumberFormat(local,option).format;
+  
+
+  ## setinterval(),clearinterval()
+  ## setTimeout(),clearTimeout()
