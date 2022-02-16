@@ -715,3 +715,54 @@ difference between object and map
 
   ## setinterval(),clearinterval()
   ## setTimeout(),clearTimeout()
+
+****************** **DAY 27***************************
+
+## Dom again
+  - Dom is complex api
+  - dom contains different type of nodes that are:
+    - elements: this has methods
+       - html Elements
+         - btns
+         - div and more
+    - text
+    - comment
+    - documents:even this has methods
+  - Methods and and propersties can be inherited
+## select,create,delete elements of dom using js
+   ### selections:
+  - .queryselector()
+  - .querselectorall()- returns nodelist
+  - .getElementByID()- returns htmlcollections
+   ### creations:
+  - document.createElement('html');
+    - .prepend():becomes first child
+    - .append():becomes second child
+    - these can be used to position the div as well
+  - insertAdjacentHTML()
+
+  ### >> in dom we cant have same elements repaeted twice for this we need to clown the element and then insert 
+     - .append(elem.cloneNode(true));
+    
+  ### deletions:
+  - .remove(): new method
+  - div.parentElement.removeChild(div): old method
+
+## Styles 
+  - .style.css_property="value"
+     - this adds inline style 
+     - this can read only tthe styles present inline 
+     - cant read the style present in file
+  - to read the styles that is present on the page we need to use
+     - .getComputedStyle('elem').css_property
+  - .style.setproperty('css_attribute','value')
+
+## attributes
+  - elem.src
+  - elem.className ...
+  - these can read the properties that are standard property also we can't read the custom property using these
+  - to read the custom attributes and bring what the exact value of attribute we need to use :
+     - elem.getAttribute('attribute');
+     
+
+  
