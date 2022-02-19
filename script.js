@@ -970,7 +970,7 @@ console.log(Date.getTime()); */
 
 /***********************day26********************************/
 
-const date1=new Date();
+/*const date1=new Date();
 
 const date2=new Date('sun 15 march 2022');
 console.log(date2);
@@ -1018,4 +1018,39 @@ const stop=setInterval(function(){
     if(counter<0){
         clearInterval(stop);
     }
-}, 1000)
+}, 1000)*/
+
+/***********************day27********************************/
+console.log(document.querySelectorAll('.demo')); //returns nodelist
+console.log(document.getElementsByTagName('div'));// returns html collection
+const demo=document.querySelector('#demo1');
+//creating HTML tags
+let creation1=document.createElement('div');
+let creation2=document.createElement('h1');
+creation2.append('this appends');         //these append and prepend methods are used to populate the element on which they are called on
+creation1.prepend(creation2);
+demo.append(creation1);         //two things can't be odne on same element that dosent work here latest method gets overwritten
+// demo.prepend(creation1);
+
+demo.prepend(creation1.cloneNode(true)); // using clone node we can copy the node and then make both of them work
+
+const footer=document.querySelector('footer');
+const btn=document.querySelector('.btnDemo');
+const cords1=footer.getBoundingClientRect();    //gets the coordinates of the footer element
+ 
+btn.addEventListener('click',function() {
+    console.log(btn.getBoundingClientRect());
+   console.log('x and why co ordinate',window.pageXOffset,window.pageYOffset);
+   console.log(document.documentElement.clientHeight,btn.clientWidth);
+   console.log(cords1);
+//    window.scrollTo(cords1.left,cords1.top); //this will make the scroll happen to the particular coordinate  metioned
+
+   // passing objects inside the window.scrollTo()
+//    window.scrollTo({
+//        left:cords1.left+window.pageXOffset,
+//        top:cords1.top+window.pageYOffset,
+//        behavior:'smooth',
+//    });
+// these are all old methods
+footer.scrollIntoView({behavior:"smooth"}); // the new method which dose't need all those math
+});

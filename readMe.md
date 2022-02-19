@@ -763,6 +763,12 @@ difference between object and map
   - these can read the properties that are standard property also we can't read the custom property using these
   - to read the custom attributes and bring what the exact value of attribute we need to use :
      - elem.getAttribute('attribute');
-     
+
+## scrolling and methods:
+  - element.getBoundingClientRect(): gets the dimensions and position related to the element with the reference to the view port
+  - .pageXOffset() gets the x co ordinate that has been scrolled(scrollX)
+  - .pageYOffset() gets the y co ordinate the has been scrolled(scrolly)
+  - .clientHeight() gets the height excluding marigins and paddings
+  - .clientWidth() gets the width excluding margins and paddings
 
   
