@@ -1054,3 +1054,11 @@ btn.addEventListener('click',function() {
 // these are all old methods
 footer.scrollIntoView({behavior:"smooth"}); // the new method which dose't need all those math
 });
+
+
+/***********************day28********************************/
+const alerter=function(){
+    alert('you are hovering on footer');
+    footer.removeEventListener('mouseenter',alerter);  // this removes the eventlistner and the call back will not me triggred 
+}
+footer.addEventListener('mouseenter',alerter);

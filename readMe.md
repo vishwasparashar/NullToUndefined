@@ -771,4 +771,9 @@ difference between object and map
   - .clientHeight() gets the height excluding marigins and paddings
   - .clientWidth() gets the width excluding margins and paddings
 
-  
+****************** **DAY 28***************************
+## different event handlers 
+  - element.onEvent=call_back();
+  - inline call 
+  - these are old ways to addEventListner() legacy
+  - .removeEventListner('event',call_back()) is used to remove the event listner when it becomes unecessary in webpage
