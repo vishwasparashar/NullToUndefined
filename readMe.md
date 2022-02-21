@@ -777,3 +777,21 @@ difference between object and map
   - inline call 
   - these are old ways to addEventListner() legacy
   - .removeEventListner('event',call_back()) is used to remove the event listner when it becomes unecessary in webpage
+
+  
+****************** **DAY 29***************************
+## event propagation phases
+   - capturing phase: root to target
+   - Target phase
+   - bubbling phase: target to root
+   - e.target : will be same for parent as well as target element
+   - e.currentTarget: will cahenge according to the buble also acts like this key word
+
+   - By default the event listening happens in bubbling phase
+   - For making event to listen to in capturing phase we need to specify third paramater in eventlistner as true
+
+
+## event deligation
+   - adding event listner to common parent 
+   - using e.currentTarget and the class list to hear to events only in the particular parts not on all the part of parent element
+
