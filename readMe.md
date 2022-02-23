@@ -819,9 +819,33 @@ difference between object and map
 
 ## using the Intersection Observer API
     - call back can be the function that gets triggered after the threshold is met 
+    - call_back(entries,observer)
     - const observer=new IntersectionObserver(call_back,{
       root:null   // for entire window
       thershold:value    // used to check the intersection of the target   on root that is specified
       rootmargin:value   // margin for the occurance of the event that is based on itersection
     });
     observer.observe(element) 
+
+****************** **DAY 31***************************
+- entry.target()
+- entry.unobserve(entry,target), this will u observe the  once observed event
+### did lazy loading
+### did slider
+### life Cycle of dom 
+  - domContentLoaded: this event occurs when HTML is being parsed and  dom tree is built
+  - load: this evetn occurs whent the complete page gets loaded
+  - beforeUnloaded: this event occurs gets closed
+      - event.returnValue=""
+      - this shouldn't be used often
+### Script loading js
+  - regular
+      - the fetching and execution  takes place separately and the html will parsing will be stoped
+      - is supported by all browser
+  - async
+      - the fetching happens with html parsing however while execution the the html process gets stalled
+      - this is not supported in older browser
+  - defer
+      - same as async but the execution happens only when html parsing is completed the html parsing wont be stalled
+      - this is not supported in older browser
+      
