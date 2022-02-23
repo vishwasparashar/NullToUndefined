@@ -795,3 +795,33 @@ difference between object and map
    - adding event listner to common parent 
    - using e.currentTarget and the class list to hear to events only in the particular parts not on all the part of parent element
 
+
+****************** **DAY 30***************************
+## DOM traversing 
+### used to go down
+  - element.childNodes: gets the nodelist that are all the children of the element in dom
+  - element.children: gets the htmlcollection that is a collection of html elements in dom
+  - .firstChild
+  - .lastChild
+### used to go up
+  - .parentNode:gets immediate parentnode
+  - .parentElements:gets immediate parent Elements
+  - .closest('selector')
+      - gets the closest parent which is equal to selector call or id
+      - if there exists no parent class then it returns selector it self
+      - we can use few logical or mathematical operation while passing selectors
+### used to traverse through siblings
+  - .previousElementSibling/previousElement: to get previous sibling element  and node respectively
+  - .nextElementSibling/.nextElement: to get next sibling element and node respectively
+## passing arguments through EventHandler call back function
+  - use bind method to set default argeument 
+  - use nested functions inside the call back which has argument
+
+## using the Intersection Observer API
+    - call back can be the function that gets triggered after the threshold is met 
+    - const observer=new IntersectionObserver(call_back,{
+      root:null   // for entire window
+      thershold:value    // used to check the intersection of the target   on root that is specified
+      rootmargin:value   // margin for the occurance of the event that is based on itersection
+    });
+    observer.observe(element) 
