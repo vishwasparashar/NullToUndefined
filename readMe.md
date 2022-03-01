@@ -849,3 +849,68 @@ difference between object and map
       - same as async but the execution happens only when html parsing is completed the html parsing wont be stalled
       - this is not supported in older browser
       
+****************** **DAY 32***************************
+## object oriented programming using js
+- Traditional oop
+   - using class and instance
+- 4 fudamental concept of oop
+   - PIEA
+     - polymorphism
+     - inheritance
+     - encapsulation
+     - abstraction
+
+
+- OOP in js needs to be faked
+## Prototype is used to implement opp in js
+- need to use deligation on prototype
+- method in prototype can be acessed by the objects of the method 
+## using prototype in different ways:
+- constructor function
+- classes in es6
+- object.create()
+
+## using constructor function :
+- just a normal function but we need to have call we need to use new keyword 
+- when we use new the empty object is created 
+- empty object is linked to prrototype of the constructor
+- few methods on instances of the class constructor:
+    - obj.instanceofconstructor() returns true or false
+    - obj.__ proto returns the prototype of the obj and is equal to constructor.prototype
+    - obj.hasownporoperty('property_name') returns true or false
+- every function will have its own prototype 
+- all the the objects associated to it can acess the prototype of the constructor
+- properties declared inside the prototype is not the own property of the 
+constructor as well
+-prototypal inhertance and its chain
+## uisng es6 classes:
+- can use class key word 
+- should have constructor object defined inside class
+- any thing that is declared outside function and inside the class that becomes a protypal property
+- hence to add a proptoypal method there is no need to use prototype keyword here
+- classes are always executed in strict mode
+- classes are first class they can just be treated like values
+
+## getters and setters
+## Static methods :
+ - these methods can't be acessed by the instance or the child classes
+ - these methods can only be acessed by the constructo it self
+ - static keyword is used in es6 clases
+ - the method is declared and called called by with the constructor name i constructor prototype
+## using Objec.create()
+  - to create constructor with custom protype object
+
+
+****************** **DAY 34***************************
+## inheritance between classes : ( using constructor)
+- we will call parent constructor using call method inside the child constructor from this we can use the properties of the parent constructor 
+- to use the prototype of the constructor we need to link them
+  - child constructor.prototype=object.create(parent constructor.prototype)
+
+## inheritance between classes :(using es6 classes)
+- using extends keyword  using this will link the prototypes 
+- super() to acess the protype of the parent class constructor
+## inheritane between classes : (using object. create())
+
+## need for public interrface and making data encpsulated
+

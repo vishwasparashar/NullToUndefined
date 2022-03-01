@@ -1021,7 +1021,7 @@ const stop=setInterval(function(){
 }, 1000)*/
 
 /***********************day27********************************/
-console.log(document.querySelectorAll('.demo')); //returns nodelist
+/*console.log(document.querySelectorAll('.demo')); //returns nodelist
 console.log(document.getElementsByTagName('div'));// returns html collection
 const demo=document.querySelector('#demo1');
 //creating HTML tags
@@ -1057,8 +1057,74 @@ footer.scrollIntoView({behavior:"smooth"}); // the new method which dose't need 
 
 
 /***********************day28********************************/
-const alerter=function(){
+/*const alerter=function(){
     alert('you are hovering on footer');
     footer.removeEventListener('mouseenter',alerter);  // this removes the eventlistner and the call back will not me triggred 
 }
 footer.addEventListener('mouseenter',alerter);
+
+/***********************day32********************************/
+
+// oops concept
+// const person=function(name,birthYear){
+//     console.log(this);
+//      this.fname=name;
+//      this.bYear=birthYear;
+//   }
+//   const vish=new person('vishwas',2001);
+  
+//   console.log(vish);
+//   person.prototype.calcAge=function(){
+//     console.log(this.bYear);
+//     console.log(2022-this.bYear);
+//   }
+//   console.log(person.prototype===vish.__proto__);
+//   console.log(person.__proto__===Object.__proto__);
+//   vish.calcAge();
+  
+//   console.log(vish.__proto__);
+//   console.log(vish.__proto__.__proto__);
+//   console.log(vish.__proto__.__proto__.__proto__);
+
+/***********************day34********************************/
+
+/*const car=function(make,current_speed){
+    this.make=make;
+    this.current_speed=current_speed;
+  };
+  const bmw=new car('bmw',120);
+  
+  const benz=new car('benz',90);
+  console.log(bmw,benz);
+  car.prototype.accelarate=function(){
+    this.current_speed=this.current_speed+10;
+    console.log(this.current_speed)
+  };
+  car.prototype.brake=function(){
+    this.current_speed=this.current_speed-5;
+    console.log(this.current_speed)
+  };
+  // console.log(bmw.accelarate());
+  // console.log(bmw.brake());
+  
+  const ev= function(make,current_speed,charge){
+    car.call(this,make,current_speed);
+    this.charge=charge;
+    
+  };
+  ev.prototype=Object.create(car.prototype);      //this creates link between ev prototype and car prototype
+  ev.prototype.chargeto=function(chargeto){
+    this.charge=chargeto;
+  }
+  ev.prototype.display=function(){
+    console.log(`${this.make} is going at ${this.current_speed} has ${this.charge}`);
+  };
+  const tesla=new ev('tesla',140,'23%');
+  tesla.display();
+  tesla.chargeto('90%');
+  tesla.accelarate();           //acessing the prototype methods of the car can also create new prototype methods with same name as parent prototype method of parent and overload that property
+  tesla.brake();                
+  console.log(tesla);
+  */
+  
+  
