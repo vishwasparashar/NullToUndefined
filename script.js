@@ -1126,5 +1126,52 @@ footer.addEventListener('mouseenter',alerter);
   tesla.brake();                
   console.log(tesla);
   */
-  
-  
+
+
+
+/***********************day35********************************/
+
+
+// using private fields and methods
+/*
+class ClassWithPrivateMethod {
+  #privateMethod() {
+    return 'hello world';
+  }
+
+  getPrivateMessage() {
+    return this.#privateMethod();
+  }
+}
+
+const instance = new ClassWithPrivateMethod();
+console.log(instance.getPrivateMessage());
+
+
+
+
+class parent{
+  #movement=[];
+  constructor(name){
+    this.name=name;
+  }
+
+  dposit(element){
+     this.#movement.push(element);
+    return this;
+     
+   }
+  withdrawal(element){
+    this.#movement.push(-element);
+    return this;
+  }
+  display(){
+    return(this.#movement);
+  }
+};
+const obj=new parent();
+obj.dposit(50).withdrawal(50).dposit(100);
+obj.withdrawal(25);
+console.log(obj.display());
+
+*/

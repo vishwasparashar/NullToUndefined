@@ -914,3 +914,14 @@ constructor as well
 
 ## need for public interrface and making data encpsulated
 
+****************** **DAY 35***************************
+## use a convention of adding underscore to the property at the start this convention says the developer that this should not be acessed outside the class 
+## true encasulation
+   - can be done using private field and private method
+       - we need to add # at the start 
+       - private fields are declared outside the constructor but inside the class
+       - these can't be accessed directly out side we need to use public method to use these private fields 
+
+## method chaining 
+   - this can happen when the function can return the current object that is this keyword
+   
