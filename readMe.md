@@ -925,3 +925,15 @@ constructor as well
 ## method chaining 
    - this can happen when the function can return the current object that is this keyword
    
+****************** **DAY 36***************************
+## building mapty app using various api 
+   - planning for the project
+   - get user perspective
+   - how to implement these requirement by user
+   - now we will draw flow chart 
+   - we can start architecture and start organinzing the code so that it dosen't end up like a spaggeti code
+## using navigator api to get the current location co ordinates
+   - navigator.geolocation.getCurrentPosition(callback_for_no error,call_for error);
+   - the position can be passed as an argument to acess the current coords in the first call back that is for normal working of the cod
+## using leaflet to use the map
+   - L -> is the namespace used in leaflet library
